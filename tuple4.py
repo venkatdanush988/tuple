@@ -9,10 +9,13 @@ Sample Output:
 60
 
 """
-a=input("enter elements for total sum")
-b=tuple(map(int,a.split())
-sum=0
-for i in b:
-  sum+=i
-print("the sum is",sum)
-  
+n = int(input("Enter the number of tuple elements: "))
+elements = []
+
+for _ in range(n):
+    element = int(input("Enter element: "))
+    elements.append(element)
+
+tuple_elements = tuple(elements)
+total_sum = sum(tuple_elements)
+print("The sum is", total_sum)
