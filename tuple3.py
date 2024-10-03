@@ -6,6 +6,7 @@ Sample Output:
 3
 
 """
-a=int(input("enter tuple elements"))
-b=tuple(map(a.split()))
-print(b)
+ 
+input_data = input("Enter the tuple elements separated by spaces: ")
+tuple_elements = tuple(map(int, input_data.split()))
+print(len(tuple_elements))
